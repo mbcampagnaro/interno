@@ -6,23 +6,44 @@
   <title>Informações Internas - Campagnaro</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
     details {
-      background: #fff;
+      background: #f2f2f2;
       border-radius: 8px;
       margin-bottom: 1rem;
       padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid #d9d9d9;
     }
     summary {
       font-weight: bold;
       cursor: pointer;
-      color: #004080;
+      color: #003366;
       font-size: 1.2rem;
     }
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
     }
     th, td {
       padding: 0.75rem;
@@ -32,6 +53,24 @@
     ul {
       margin-top: 1rem;
       padding-left: 1.5rem;
+    }
+    ul li a {
+      color: #003366;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 2rem 0 1rem;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
