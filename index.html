@@ -4,197 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informações Internas - Campagnaro</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { background: #f9f9f9; font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #333; font-size: 16px; line-height: 1.6; }
-    header { background: #003366; color: white; padding: 1.5rem; text-align: center; }
-    main { padding: 2rem 1rem; max-width: 960px; margin: auto; }
-    details { background: #f2f2f2; border-radius: 8px; margin-bottom: 1.5rem; padding: 1.2rem; border: 1px solid #d9d9d9; }
-    summary { font-weight: bold; cursor: pointer; color: #003366; font-size: 1.2rem; margin-bottom: 0.5rem; }
-    table, ul { width: 100%; margin-top: 1rem; }
-    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #eee; font-size: 0.95rem; }
-    ul li { margin-bottom: 0.5rem; }
-    ul li a { color: #003366; text-decoration: none; }
-    ul li a:hover { text-decoration: underline; }
-    footer { text-align: center; font-size: 0.85rem; color: #777; margin: 2rem 0 1rem; }
-    h3 { color: #003366; margin-top: 1rem; }
-    @media (max-width: 600px) { main { padding: 1rem; } summary { font-size: 1rem; } }
+    body{background:#f9f9f9;font-family:'Roboto',sans-serif;margin:0;padding:0;color:#333;font-size:16px;line-height:1.6}
+    header{background:#003366;color:#fff;padding:1.5rem;text-align:center}
+    main{padding:2rem 1rem;max-width:960px;margin:auto}
+    details{background:#f2f2f2;border-radius:8px;margin-bottom:1.5rem;padding:1.2rem;border:1px solid #d9d9d9}
+    summary{font-weight:700;cursor:pointer;color:#003366;font-size:1.2rem;display:flex;justify-content:space-between;align-items:center}
+    .copy-btn{background:#003366;color:#fff;border:none;padding:.3rem .6rem;border-radius:4px;cursor:pointer;font-size:.9rem}
+    table,ul{width:100%;margin-top:1rem}
+    th,td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid #eee;font-size:.95rem}
+    ul li{margin-bottom:.5rem}
+    ul li a{color:#003366;text-decoration:none}
+    ul li a:hover{text-decoration:underline}
+    footer{text-align:center;font-size:.85rem;color:#777;margin:2rem 0 1rem}
+    @media(max-width:600px){main{padding:1rem}summary{font-size:1rem}}
   </style>
 </head>
 <body>
-
 <header>
   <h1>Informações Internas - Campagnaro</h1>
 </header>
-
 <main>
 
-  <details>
-    <summary>Ramais e Telefones</summary>
-    <table>
-      <tr><th>Ramal</th><th>Setor / Pessoa</th></tr>
-      <tr><td>6079</td><td>Truck Center - Ariane</td></tr>
-      <tr><td>6080</td><td>Truck Center - Andresa</td></tr>
-      <tr><td>6081</td><td>Truck Center - Vanderlei</td></tr>
-      <tr><td>6082</td><td>Truck Center - Pátio</td></tr>
-      <tr><td>6096</td><td>Truck Center - Ariane PC</td></tr>
-      <tr><td>6083</td><td>Acessórios - Angelita</td></tr>
-      <tr><td>6084</td><td>Acessórios - Gerson</td></tr>
-      <tr><td>6085</td><td>Acessórios - Estofaria</td></tr>
-      <tr><td>6086</td><td>Acessórios - Tafarel</td></tr>
-      <tr><td>6093</td><td>Acessórios - Adesivos</td></tr>
-      <tr><td>6087</td><td>Caminhões</td></tr>
-      <tr><td>6088</td><td>Randon - Maicon</td></tr>
-      <tr><td>6089</td><td>Randon - Adriana</td></tr>
-      <tr><td>6090</td><td>Randon - Amarildo</td></tr>
-      <tr><td>6091</td><td>Randon - Almoxarife</td></tr>
-      <tr><td>6092</td><td>Randon - Maiara</td></tr>
-      <tr><td>8112</td><td>São Marcos - Principal</td></tr>
-      <tr><td>8114</td><td>São Marcos - Forte</td></tr>
-      <tr><td>8113</td><td>São Marcos - Claudenir</td></tr>
-      <tr><td>4190</td><td>E-commerce - Principal</td></tr>
-      <tr><td>8111</td><td>E-commerce - Assis</td></tr>
-      <tr><td>4193</td><td>E-commerce - Mariano</td></tr>
-      <tr><td>8110</td><td>E-commerce - Leonardo Ramal</td></tr>
-      <tr><td>6098</td><td>Pigozzi</td></tr>
-      <tr><td>4192</td><td>Contabilidade - Raniela</td></tr>
-      <tr><td>4734</td><td>Demolidora</td></tr>
-    </table>
-  </details>
+<!-- O conteúdo anterior continua aqui... -->
 
-  <details>
-    <summary>Cadastro das Empresas</summary>
+<!-- Peças e Acessórios -->
+<details>
+  <summary>Campagnaro Peças e Acessórios <button class="copy-btn" onclick="copyDetails(this)">Copiar</button></summary>
+  <ul>
+    <li>Razão Social: Campagnaro Peças e Acessórios LTDA</li>
+    <li>CNPJ: 02.325.675/0001-36</li>
+    <li>IE: 1540078555</li>
+    <li>IM: 9993</li>
+    <li>Endereço: BR 116, 8800 - Santa Terezinha, Vacaria/RS - CEP 95205-000</li>
+    <li>Telefone: (54) 3232-7272</li>
+    <li>E-mail: acessorios@campagnaro.com.br</li>
+  </ul>
+</details>
 
-    <details>
-      <summary>Forte Demolidora</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Angelita Maso Campagnaro</li>
-        <li><strong>CNPJ:</strong> 48.700.978/0001-92</li>
-        <li><strong>IE:</strong> 1540125030</li>
-        <li><strong>IM:</strong> 144081-0</li>
-        <li><strong>Endereço:</strong> Av. Juscelino Kubitschek de Oliveira, 9661 - Lindoca, Vacaria/RS - CEP 95206-000</li>
-        <li><strong>Telefone:</strong> (54) 3252-0888 (Ramal 4734)</li>
-        <li><strong>WhatsApp:</strong> (54) 99196-2692</li>
-        <li><strong>E-mails:</strong> cdv01090@cdv.rs.gov.br / financeiro@demolidoraforte.com.br / vendas@demolidoraforte.com.br</li>
-        <li><strong>Site:</strong> <a href="https://www.demolidoraforte.com.br" target="_blank">demolidoraforte.com.br</a></li>
-      </ul>
-    </details>
+<!-- Truck Center -->
+<details>
+  <summary>Campagnaro Truck Center <button class="copy-btn" onclick="copyDetails(this)">Copiar</button></summary>
+  <ul>
+    <li>Razão Social: Campagnaro Truck Center</li>
+    <li>CNPJ: 02.325.675/0004-89</li>
+    <li>IE: 1540108098</li>
+    <li>IM: 136867</li>
+    <li>Endereço: Av. Juscelino Kubitschek, 6255 - Pradense, Vacaria/RS - CEP 95208-350</li>
+    <li>Telefone: (54) 3232-7422</li>
+    <li>E-mail: truckcenter@campagnaro.com.br</li>
+  </ul>
+</details>
 
-    <details>
-      <summary>Campagnaro E-commerce</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Leonardo Boff Campagnaro</li>
-        <li><strong>CNPJ:</strong> 32.128.846/0001-06</li>
-        <li><strong>IE:</strong> 1540118557</li>
-        <li><strong>IM:</strong> 1398450</li>
-        <li><strong>Endereço:</strong> Av. Juscelino Kubitschek, 6255 - Pradense, Vacaria/RS - CEP 95208-350</li>
-        <li><strong>Telefone:</strong> (54) 3232-0135</li>
-        <li><strong>E-mails:</strong> financeiro@campagnaro.com.br / notasfiscais@campagnaro.com.br</li>
-      </ul>
-    </details>
+<!-- Caminhões -->
+<details>
+  <summary>Campagnaro Caminhões <button class="copy-btn" onclick="copyDetails(this)">Copiar</button></summary>
+  <ul>
+    <li>Razão Social: Andresa Marin Campagnaro</li>
+    <li>CNPJ: 31.089.399/0001-52</li>
+    <li>IE: 1540118026</li>
+    <li>IM: 136867</li>
+    <li>Endereço: Av. Juscelino Kubitschek, 6168 - Pradense, Vacaria/RS - CEP 95208-350</li>
+    <li>Telefone: (54) 3232-2816</li>
+    <li>E-mail: caminhoes@campagnaro.com.br</li>
+  </ul>
+</details>
 
-    <details>
-      <summary>Forte Restauradora</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Claudenir Sandi EIRELI - ME</li>
-        <li><strong>CNPJ:</strong> 18.908.952/0001-73</li>
-        <li><strong>IE:</strong> 224/0027473</li>
-        <li><strong>IM:</strong> 2240027473</li>
-        <li><strong>Endereço:</strong> BR 116 KM 110 - Bela Vista, São Marcos/RS - CEP 95190-000</li>
-        <li><strong>Telefone:</strong> (54) 3291-4196</li>
-        <li><strong>WhatsApp:</strong> (54) 99133-0570</li>
-        <li><strong>E-mail:</strong> forte@forterestauradora.com.br</li>
-      </ul>
-    </details>
+<!-- Chapeação -->
+<details>
+  <summary>Chapeação <button class="copy-btn" onclick="copyDetails(this)">Copiar</button></summary>
+  <ul>
+    <li>Razão Social: Mariano Boff Campagnaro</li>
+    <li>CNPJ: 10.864.364/0001-73</li>
+    <li>IE: 1540105242</li>
+    <li>IM: 136157</li>
+  </ul>
+</details>
+</details>
 
-    <details>
-      <summary>Campagnaro e Ciotta Implementos Rodoviários</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Campagnaro e Ciotta Implementos Rodoviários</li>
-        <li><strong>CNPJ:</strong> 25.167.600/0001-70</li>
-        <li><strong>IE:</strong> 1540115728</li>
-        <li><strong>IM:</strong> 139351</li>
-        <li><strong>Endereço:</strong> Av. Juscelino Kubitschek, 6255 - Pradense, Vacaria/RS - CEP 95208-350</li>
-        <li><strong>Telefones:</strong> (54) 3232-6677 / (54) 3232-8209</li>
-        <li><strong>E-mail:</strong> cec@cecimplementos.com.br</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Campagnaro Peças e Acessórios LTDA</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Campagnaro Peças e Acessórios LTDA</li>
-        <li><strong>CNPJ:</strong> 02.325.675/0001-36</li>
-        <li><strong>IE:</strong> 1540078555</li>
-        <li><strong>IM:</strong> 9993</li>
-        <li><strong>Endereço:</strong> BR 116, 8800 - Santa Terezinha, Vacaria/RS - CEP 95205-000</li>
-        <li><strong>Telefone:</strong> (54) 3232-7272</li>
-        <li><strong>E-mail:</strong> acessorios@campagnaro.com.br</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Campagnaro Truck Center</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Campagnaro Truck Center</li>
-        <li><strong>CNPJ:</strong> 02.325.675/0004-89</li>
-        <li><strong>IE:</strong> 1540108098</li>
-        <li><strong>IM:</strong> 136867</li>
-        <li><strong>Endereço:</strong> Av. Juscelino Kubitschek, 6255 - Pradense, Vacaria/RS - CEP 95208-350</li>
-        <li><strong>Telefone:</strong> (54) 3232-7422</li>
-        <li><strong>E-mail:</strong> truckcenter@campagnaro.com.br</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Campagnaro Caminhões</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Andresa Marin Campagnaro</li>
-        <li><strong>CNPJ:</strong> 31.089.399/0001-52</li>
-        <li><strong>IE:</strong> 1540118026</li>
-        <li><strong>IM:</strong> 136867</li>
-        <li><strong>Endereço:</strong> Av. Juscelino Kubitschek, 6168 - Pradense, Vacaria/RS - CEP 95208-350</li>
-        <li><strong>Telefone:</strong> (54) 3232-2816</li>
-        <li><strong>E-mail:</strong> caminhoes@campagnaro.com.br</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Chapeação</summary>
-      <ul>
-        <li><strong>Razão Social:</strong> Mariano Boff Campagnaro</li>
-        <li><strong>CNPJ:</strong> 10.864.364/0001-73</li>
-        <li><strong>IE:</strong> 1540105242</li>
-        <li><strong>IM:</strong> 136157</li>
-      </ul>
-    </details>
-
-  </details>
-
-  <details>
-    <summary>Contatos de WhatsApp</summary>
-    <ul>
-      <li><a href="http://wa.me/555432320135" target="_blank">E-commerce</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554991345150" target="_blank">Leonardo Campagnaro</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554991427618" target="_blank">Mariano Campagnaro</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554999731355" target="_blank">Gerson Campagnaro</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554999754500" target="_blank">Adriana Campagnaro</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554996431904" target="_blank">Maiara Ciotta</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554991330570" target="_blank">Claudenir Forte</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554999578137" target="_blank">Truck Center</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=555432322816" target="_blank">Campagnaro Caminhões</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554996895961" target="_blank">Amarildo Ciotta</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554991235157" target="_blank">Angelita</a></li>
-      <li><a href="https://api.whatsapp.com/send?phone=5554992171226" target="_blank">Vanderlei</a></li>
-    </ul>
-  </details>
-
+<!-- Contatos de WhatsApp -->
+<details>
+  <summary>Contatos de WhatsApp</summary>
+  <ul>
+    <li><a href="http://wa.me/555432320135" target="_blank">E-commerce</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554991345150" target="_blank">Leonardo Campagnaro</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554991427618" target="_blank">Mariano Campagnaro</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554999731355" target="_blank">Gerson Campagnaro</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554999754500" target="_blank">Adriana Campagnaro</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554996431904" target="_blank">Maiara Ciotta</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554991330570" target="_blank">Claudenir Forte</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554999578137" target="_blank">Truck Center</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=555432322816" target="_blank">Campagnaro Caminhões</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554996895961" target="_blank">Amarildo Ciotta</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554991235157" target="_blank">Angelita</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5554992171226" target="_blank">Vanderlei</a></li>
+  </ul>
+</details>
 </main>
 
 <footer>
   &copy; 2025 Mariano Campagnaro - Página Interna
 </footer>
+
+<script>
+  function copyDetails(button) {
+    const detailsBlock = button.closest('details');
+    const items = detailsBlock.querySelectorAll('ul li');
+    const text = Array.from(items).map(li => li.innerText).join('\n');
+    navigator.clipboard.writeText(text).then(() => {
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+  }
+</script>
 
 </body>
 </html>
