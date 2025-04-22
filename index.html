@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informações Internas - Campagnaro</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    details {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #004080;
+      font-size: 1.2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,8 +43,8 @@
 
 <main>
 
-  <section>
-    <h2>Ramais e Telefones</h2>
+  <details>
+    <summary>Ramais e Telefones</summary>
     <table>
       <tr><th>Ramal</th><th>Setor / Pessoa</th></tr>
       <tr><td>6079</td><td>Truck Center - Ariane</td></tr>
@@ -48,20 +77,20 @@
       <tr><td>4192</td><td>Contabilidade - Raniela</td></tr>
       <tr><td>4734</td><td>Demolidora</td></tr>
     </table>
-  </section>
+  </details>
 
-  <section>
-    <h2>Localizações das Empresas</h2>
+  <details>
+    <summary>Localizações das Empresas</summary>
     <ul>
       <li><strong>Truck Center:</strong> <a href="https://g.page/campagnarotruckcenter?share" target="_blank">Ver no Google Maps</a> | <a href="https://g.page/campagnarotruckcenter/review" target="_blank">Avaliar</a></li>
       <li><strong>Peças e Acessórios:</strong> <a href="https://g.page/acessorioscampagnaro?share" target="_blank">Ver no Google Maps</a> | <a href="https://g.page/acessorioscampagnaro/review?gm" target="_blank">Avaliar</a></li>
       <li><strong>Campagnaro e Ciotta:</strong> <a href="https://g.page/cecimplementos?share" target="_blank">Ver no Google Maps</a> | <a href="https://g.page/cecimplementos/review?gm" target="_blank">Avaliar</a></li>
       <li><strong>Forte Restauradora:</strong> <a href="https://g.page/forte_restauradora?share" target="_blank">Ver no Google Maps</a> | <a href="https://g.page/forte_restauradora/review?gm" target="_blank">Avaliar</a></li>
     </ul>
-  </section>
+  </details>
 
-  <section>
-    <h2>Contatos de WhatsApp</h2>
+  <details>
+    <summary>Contatos de WhatsApp</summary>
     <ul>
       <li><a href="http://wa.me/555432320135" target="_blank">E-commerce</a></li>
       <li><a href="https://api.whatsapp.com/send?phone=5554991345150" target="_blank">Leonardo Campagnaro</a></li>
@@ -76,7 +105,7 @@
       <li><a href="https://api.whatsapp.com/send?phone=5554991235157" target="_blank">Angelita</a></li>
       <li><a href="https://api.whatsapp.com/send?phone=5554992171226" target="_blank">Vanderlei</a></li>
     </ul>
-  </section>
+  </details>
 
 </main>
 
