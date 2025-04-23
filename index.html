@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informações Internas - Campagnaro</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { background: #f9f9f9; font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #333; font-size: 16px; line-height: 1.6; }
-    header { background: #003366; color: white; padding: 1.5rem; text-align: center; }
-    main { padding: 2rem 1rem; max-width: 960px; margin: auto; }
-    details { background: #f2f2f2; border-radius: 8px; margin-bottom: 1.2rem; padding: 0.8rem 1rem; border: 1px solid #d9d9d9 }
-    summary { font-weight: 700; cursor: pointer; color: #003366; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
-    .copy-btn { background: #003366; color: #fff; border: none; padding: .3rem .6rem; border-radius: 4px; cursor: pointer; font-size: .85rem }
-    table, ul { width: 100%; margin-top: 1rem; }
-    th, td { padding: .4rem .8rem; text-align: left; border-bottom: 1px solid #eee; font-size: .9rem; }
-    ul li { margin-bottom: .3rem; font-size: .95rem; }
-    ul li a { color: #003366; text-decoration: none; }
-    ul li a:hover { text-decoration: underline; }
-    footer { text-align: center; font-size: 0.85rem; color: #777; margin: 2rem 0 1rem; }
-    .loading { font-style: italic; color: #666; margin-bottom: 1rem; }
-    @media(max-width:600px) {
-      main { padding: 1rem; }
-      summary { font-size: 1rem; }
-    }
+    body{background:#f9f9f9;font-family:'Roboto',sans-serif;margin:0;padding:0;color:#333;font-size:16px;line-height:1.6}
+    header{background:#003366;color:#fff;padding:1.5rem;text-align:center}
+    main{padding:2rem 1rem;max-width:960px;margin:auto}
+    details{background:#f2f2f2;border-radius:8px;margin-bottom:1.2rem;padding:0.8rem 1rem;border:1px solid #d9d9d9}
+    summary{font-weight:700;cursor:pointer;color:#003366;font-size:1.1rem;display:flex;justify-content:space-between;align-items:center}
+    table,ul{width:100%;margin-top:1rem}
+    th,td{padding:.4rem .8rem;text-align:left;border-bottom:1px solid #eee;font-size:.9rem}
+    ul li{margin-bottom:.3rem;font-size:.95rem}
+    ul li a{color:#003366;text-decoration:none}
+    ul li a:hover{text-decoration:underline}
+    footer{text-align:center;font-size:.85rem;color:#777;margin:2rem 0 1rem}
+    @media(max-width:600px){main{padding:1rem}summary{font-size:1rem}}
   </style>
 </head>
 <body>
-
 <header>
   <h1>Informações Internas - Campagnaro</h1>
 </header>
-
 <main>
   <div id="secao-ramais"><p class="loading">Carregando ramais...</p></div>
   <div id="secao-empresas"><p class="loading">Carregando cadastro das empresas...</p></div>
   <div id="secao-whatsapp"><p class="loading">Carregando contatos de WhatsApp...</p></div>
 </main>
-
 <footer>
   &copy; 2025 Mariano Campagnaro - Página Interna
 </footer>
-
 <script>
   async function carregarSecao(id, arquivo) {
     const container = document.getElementById(id);
@@ -52,22 +43,9 @@
       container.innerHTML = `<p style='color:red'>Erro ao carregar ${arquivo}</p>`;
     }
   }
-
   carregarSecao('secao-ramais', 'ramais.html');
   carregarSecao('secao-empresas', 'cadastro-empresas.html');
   carregarSecao('secao-whatsapp', 'whatsapp.html');
-
-  document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('copy-btn')) {
-      const items = e.target.closest('details').querySelectorAll('ul li');
-      const text = Array.from(items).map(li => li.innerText).join('\n');
-      navigator.clipboard.writeText(text).then(() => {
-        e.target.innerText = 'Copiado!';
-        setTimeout(() => e.target.innerText = 'Copiar', 2000);
-      });
-    }
-  });
 </script>
-
 </body>
 </html>
