@@ -1,67 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #004080;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.header-container img {
+  height: 50px;
+}
+
+.header-container h1 {
+  font-size: 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #004080;
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 2rem 0 1rem;
+}
+
+@media (max-width: 600px) {
   main {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
+    padding: 1rem;
   }
-  
-  section {
-    background: white;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  h2 {
-    color: #004080;
-    margin-top: 0;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  th, td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-  }
-  
-  footer {
-    text-align: center;
+  table, th, td {
     font-size: 0.9rem;
-    color: #777;
-    margin: 2rem 0 1rem;
   }
-  
-  @media (max-width: 600px) {
-    main {
-      padding: 1rem;
-    }
-    table, th, td {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
